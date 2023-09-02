@@ -20,7 +20,11 @@ playButton.addEventListener('click', () => {
     const audio = new Audio(sounds[randomIndex]);
     audio.play();
     updateCounter();
+    animationMud();
 
+});
+
+function animationMud() {
     const movingImage = document.createElement('img');
     movingImage.src = 'img/mud-spin.gif';
     movingImage.className = 'moving-image';
@@ -29,7 +33,7 @@ playButton.addEventListener('click', () => {
     movingImage.style.transition = 'transform 1.2s linear, opacity 2s linear';
     movingImage.style.opacity = '1';
 
-    let value = [-150, 260];
+    let value = [-100, 270];
 
     // get random index
     let randomNum = Math.floor(Math.random() * value.length);
@@ -47,7 +51,7 @@ playButton.addEventListener('click', () => {
         if(randomNum == 0) {
             movingImage.style.transform = 'translateX(260%)';
         } else {
-            movingImage.style.transform = 'translateX(-150%)';
+            movingImage.style.transform = 'translateX(-160%)';
         }
     }, 100);
 
@@ -57,4 +61,4 @@ playButton.addEventListener('click', () => {
             movingImage.remove();
         });
     }, 1000);
-});
+}
