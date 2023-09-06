@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Mud spin</title>
 </head>
 <body>
+
+    <!-- warning -->
+    <div class="mensaje-rotacion">
+        <p>Please view the website from a computer, I'm still working on adapting it to mobile devices</p>
+        <img src="img/mud.jpeg" alt="" srcset="" width="200px" height="200px">
+    </div>
+    
+    <!-- Container -->
     <div class="container">
         <div>
             <h1>Doktah~</h1>
@@ -16,12 +25,42 @@
         <div class="menu">
             <p>The Doktah~ has been squished</p>
             <p><span id="counter">0</span> times</p>
-            <button id="playButton">Doktah~</button>
+            <button id="playButton" class="btn">Doktah~</button>
         </div>
+
+        <!-- Footer -->
         <footer>
-            <p>Credits</p>
+            <button id="myBtn" class="btn zoom">Credits</button>
         </footer>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+         <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Credits</h2>
+            <div class="perCredit">
+                <p class="title">Mudrock gif made by</p>
+                <img src="img/pfp/yokidayo.jpg" alt="YokiDayo" width="100px" height="100px">
+                <p class="link">YokiDayo</p>
+                <p class="link">Twitter: <a href="https://twitter.com/Just_Yoki">@Just_Yoki</a></p>
+            </div>
+            <div class="perCredit">
+                <p class="title">Website inspired by <a href="https://herta.eu.org/">Kuru Kuru~</a> from </p>
+                <img src="img/pfp/duiqt.png" alt="Phúc Duy" width="100px" height="100px">
+                <p class="link">Phúc Duy</p>
+                <p class="link">Github: <a href="https://github.com/duiqt">duiqt</a></p>
+            </div>
+            <div class="perCredit">
+                <p class="title">This website was made by me ᗜˬᗜ </p>
+                <img src="img/pfp/notsurtr.jpg" alt="Surtr" width="100px" height="100px">
+                <p class="link">Surtr</p>
+                <p class="link">Twitter: <a href="https://twitter.com/notsurtr">@notsurtr</a></p>
+            </div>
+        </div>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
