@@ -66,10 +66,8 @@ function animationMud() {
     //if the variable confirm starts on the left (0) then it will animate from left to right otherwise it will animate from right to left
     if (confirm == 0) {
       movingImage.style.left = "100%";
-      console.log("funciona salid izq");
     } else {
       movingImage.style.right = "100%";
-      console.log("funciona salid der");
     }
   }, 50);
 
